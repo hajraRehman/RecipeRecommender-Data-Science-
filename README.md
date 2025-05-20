@@ -46,3 +46,55 @@ You can install the required libraries via pip:
 
 ```bash
 pip install pandas ipywidgets numpy
+``` 
+## Setup
+
+- Download the dataset from Kaggle:  
+  https://www.kaggle.com/datasets/hugodarwood/epirecipes  
+  Or use Kaggle API in Google Colab to download directly.
+
+- Load the dataset into the notebook.
+
+- Run the notebook cells sequentially to execute data cleaning, feature engineering, and model code.
+
+## Usage
+
+- Input your available ingredients as a comma-separated list.
+
+- The system calculates scores and recommends the top matching recipes.
+
+- View matched and missing ingredients, recipe rating, and coverage percentage.
+
+Example usage snippet:
+
+```python
+user_ingredients = ['eggs', 'onion', 'cheese', 'tomato']
+recommendations = recommend_recipes_with_missing(user_ingredients, recipes)
+print(recommendations)
+```
+## Future Improvements
+
+- Add dietary and allergen filters (vegan, gluten-free, etc.)
+- Implement ingredient substitutions for missing items
+- Develop a standalone web or mobile app frontend
+- Incorporate user feedback for continuous recommendation tuning
+- Enhance nutritional scoring with personalized goals
+
+## Project Structure
+
+- `RecipeRecommender.ipynb` — main Jupyter notebook with full implementation and interactive UI
+- `README.md` — project documentation
+- (Optional) Dataset files or scripts for data loading
+
+## License
+
+This project is open-source and available under the MIT License.
+
+## Acknowledgments
+
+- Dataset provided by Epicurious Recipes Dataset on Kaggle  
+- Thanks to the open-source community and contributors of pandas, ipywidgets, and other libraries
+
+---
+
+Feel free to reach out if you have questions or want to contribute!
